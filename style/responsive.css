@@ -119,7 +119,7 @@
         display: none;
     }
 
-
+    .banner-container>div {flex: 1;}
 
 
 } /*------992px---------*/
