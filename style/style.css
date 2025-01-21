@@ -90,6 +90,7 @@ a {
 
 img{
     width: 100%;
+    max-width: 200px;
 }
 .section-center {
     max-width: 1190px;
@@ -104,10 +105,12 @@ img{
     background: var(--orange);
     padding: 12px 52px;
     border-radius: 12px;
+    display: inline-block;
 }
 /* ======================== Nav ====================================  */
 nav{
     padding: 20px 0;
+    background: rgb(247,247,247);
 }
 .nav-container {
     display: flex;
@@ -139,10 +142,12 @@ nav{
     color: var(--black);
     font-size: 1.25rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .nav-container .toggle-menu {
     display: none;
+    cursor: pointer;
 }
 /* ======================== Banner =================================  */
 /* ======================== Standard Ciriculumn ====================  */
