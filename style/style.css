@@ -2,85 +2,173 @@
 
 /* ======================== CSS Reset ==============================  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ======================== Universal Style ==============================  */
 /* font-family: "Quicksand", serif; */
 /* font-family: "Raleway", serif; */
 
-:root{
+:root {
     --blue: rgb(1, 172, 253);
-    --orange:rgb(254, 163, 1);
-    --black:rgb(17, 17, 17);
+    --orange: rgb(254, 163, 1);
+    --black: rgb(17, 17, 17);
 }
 
-html{
-    font-size: 16px; 
+html {
+    font-size: 16px;
 }
 
-body{
+body {
     width: 100%;
-    font-family: "Quicksand", serif;;
+    font-family: "Quicksand", serif;
+    ;
 }
 
-.raleway-font{
+.raleway-font {
     font-family: "Raleway", serif;
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 2.875rem;
     color: var(--black);
 
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
 }
 
-p{
+p {
     color: rgb(128, 128, 128);
     font-size: 0.943rem;
 }
@@ -91,10 +179,11 @@ a {
 }
 
 
-img{
+img {
     width: 100%;
     max-width: 50vw;
 }
+
 .section-center {
     max-width: 1190px;
     margin: auto;
@@ -112,33 +201,46 @@ img{
 }
 
 main {
-    background: rgb(247,247,247);
-    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: rgb(247, 247, 247);
+    background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
+h1.section-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
 /* ======================== Nav ====================================  */
-nav{
+nav {
     padding: 20px 0;
-    background: rgb(247,247,247);
+    background: rgb(247, 247, 247);
 }
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-container .logo img{
+.nav-container .logo img {
     width: 62px;
 }
 
-.nav-container .logo h1{
-   font-size: 2rem;
-   font-weight: 700;
-   letter-spacing: 0%;
+.nav-container .logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0%;
 }
 
-.nav-container .logo,.nav-container .menu ol {
+.nav-container .logo,
+.nav-container .menu ol {
     display: flex;
     align-items: center;
 }
@@ -147,7 +249,8 @@ nav{
     gap: 0 32px;
 }
 
-.nav-container .logo,.nav-container .menu a {
+.nav-container .logo,
+.nav-container .menu a {
     text-decoration: none;
     color: var(--black);
     font-size: 1.25rem;
@@ -159,7 +262,21 @@ nav{
     display: none;
     cursor: pointer;
 }
+
 /* ======================== Banner =================================  */
+
+section.banner-section {
+    padding: 0 15px;
+}
+
+marquee {
+    width: 486px;
+    max-width: 486px;
+    top: -12px;
+    position: relative;
+    font-size: 1rem;
+}
+
 .banner-container {
     display: flex;
     flex-direction: row;
@@ -201,8 +318,220 @@ nav{
 }
 
 .banner-text .btn {
-    background: rgb(17,17,17);
+    background: rgb(17, 17, 17);
 }
+
 /* ======================== Standard Ciriculumn ====================  */
+.std-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.std-container .std-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    padding: 75px 40px;
+}
+
+.std-container .std-card:first-child a {
+    color: rgb(100, 200, 255);
+    font-weight: 700;
+}
+
+.std-container .std-card:last-child {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.std-container .std-card:last-child a {
+    color: rgb(135, 0, 255);
+}
+
+.std-container .std-card:nth-child(2) {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.std-container .std-card:nth-child(2) a {
+    color: rgb(240, 170, 0);
+}
+
+.std-container .std-card img {
+    width: 137px;
+}
+
+.std-container .std-card h2 {
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 24.52px;
+    font-weight: 700;
+    line-height: 30.65px;
+    text-align: center;
+}
+
+.std-container .std-card p {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 15.09px;
+    font-weight: 500;
+    line-height: 28.3px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.std-container .std-card a {
+    color: rgb(100, 200, 255);
+    font-family: Quicksand;
+    font-size: 15.09px;
+    font-weight: 700;
+    line-height: 28.3px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ol.std-slide {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+ol.std-slide li {
+    background: red;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+ol.std-slide li img {
+    width: 100%;
+}
+
+section.std-section {
+    padding-bottom: 3.75rem;
+}
 /* ======================== Our Story ==============================  */
+section.story-section {
+    padding: 60px 0;
+}
+.story-container {
+    display: flex;
+    gap: 20px;
+}
+
+.story-container > .story-card {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.story-card-single ,.story-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+.story-card-single>*, .story-card>* {
+    padding: 0px 34px;
+}
+
+.story-card-single>img, .story-card> img {
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.story-card-single p, .story-card p {
+    padding-bottom: 25px !important; 
+}
+
+.card-grid-content {
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+span.date {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    text-align: left;
+    text-transform: capitalize;
+    background: #03A9F4;
+    padding: 12px 24px;
+    border-radius: 25px;
+    top: -45px;
+    left: 30px;
+}
+
+.story-card-single p {
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.story-card-single h2 {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.35px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.story-card h2 {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.view_all {
+    text-align: center;
+    margin-top: 80px;
+}
 /* ======================== Footer =================================  */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container>div {
+    flex: 1;
+}
+
+.footer-about .logo img {
+    width: 80px;
+}
+
+.footer-about {
+    display: flex;
+}
