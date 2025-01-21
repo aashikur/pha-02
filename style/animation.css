@@ -1,3 +1,9 @@
 *{
-    transform: scale() 0.29s ease-out;
+    transform: all 0.3s ease-out;
 }
+
+.nav-container .ol li:hover a{
+    transform: scale(1.09);
+    opacity: .5;
+}
+

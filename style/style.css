@@ -1,108 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* ======================== CSS Reset ==============================  */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"); html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     font: inherit;
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -110,37 +14,30 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
+blockquote::before, blockquote::after, q::before, q::after {
     content: none;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 0px;
 }
-
-/* ======================== Universal Style ==============================  */
-/* font-family: "Quicksand", serif; */
-/* font-family: "Raleway", serif; */
 
 :root {
     --blue: rgb(1, 172, 253);
     --orange: rgb(254, 163, 1);
     --black: rgb(17, 17, 17);
+    --one: rgb(93 38 255);
+    --two:rgb(255 38 126) ;
+    --three: #4CAF50;
 }
 
 html {
@@ -149,19 +46,17 @@ html {
 
 body {
     width: 100%;
-    font-family: "Quicksand", serif;
-    ;
+    font-family: Quicksand, serif;
 }
 
 .raleway-font {
-    font-family: "Raleway", serif;
+    font-family: Raleway, serif;
     font-weight: 500;
 }
 
 h1 {
     font-size: 2.875rem;
     color: var(--black);
-
 }
 
 h2 {
@@ -177,33 +72,33 @@ a {
     text-decoration: none;
     color: var(--black);
 }
-
+.hide-card{
+    display: none;
+}
 
 img {
     width: 100%;
-    max-width: 50vw;
+
 }
 
 .section-center {
     max-width: 1190px;
     margin: auto;
-    padding: 0 15px;
+    padding: 0px 15px;
 }
 
 .btn {
     font-weight: 500;
     font-size: 1.25rem;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     background: var(--orange);
     padding: 12px 52px;
     border-radius: 12px;
     display: inline-block;
 }
 
-main {
-    background: rgb(247, 247, 247);
-    background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+.btn:hover,a:hover{
+    opacity: 0.8;
 }
 
 h1.section-title {
@@ -212,14 +107,13 @@ h1.section-title {
     font-size: 2.875rem;
     font-weight: 700;
     line-height: 57.5px;
-    letter-spacing: 0;
+    letter-spacing: 0px;
     text-align: center;
     margin-bottom: 5rem;
 }
 
-/* ======================== Nav ====================================  */
 nav {
-    padding: 20px 0;
+    padding: 20px 0px;
     background: rgb(247, 247, 247);
 }
 
@@ -236,26 +130,40 @@ nav {
 .nav-container .logo h1 {
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 0%;
 }
 
-.nav-container .logo,
-.nav-container .menu ol {
+.nav-container .logo, .nav-container .menu ol {
     display: flex;
     align-items: center;
 }
 
 .nav-container .menu ol {
-    gap: 0 32px;
+    gap: 0px 32px;
 }
 
-.nav-container .logo,
-.nav-container .menu a {
+.nav-container .logo, .nav-container .menu a {
     text-decoration: none;
     color: var(--black);
     font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
+}
+.nav-container .logo, .nav-container .menu ol li:nth-child(1) a{
+    color: var(--one)
+}
+.nav-container .logo, .nav-container .menu ol li:nth-child(2) a{
+    color: var(--blue)
+}
+.nav-container .logo, .nav-container .menu ol li:nth-child(3) a{
+    color: var(--orange)
+}
+.nav-container .logo, .nav-container .menu ol li:nth-child(4) a{
+    color: var(--three)
+}
+
+.nav-container .logo, .nav-container .menu ol li:hover a{
+    color: var(--one);
+    opacity: .6;
 }
 
 .nav-container .toggle-menu {
@@ -263,10 +171,10 @@ nav {
     cursor: pointer;
 }
 
-/* ======================== Banner =================================  */
 
 section.banner-section {
-    padding: 0 15px;
+    padding: 0px 15px;
+    background: rgb(247, 247, 247);
 }
 
 marquee {
@@ -283,12 +191,8 @@ marquee {
     justify-content: space-between;
     align-items: center;
     gap: 0px 50px;
-    padding: 3.75rem 0;
+    padding: 3.75rem 0px;
 }
-
-/* .banner-container>div {
-    flex: 1;
-} */
 
 .banner-hero {
     display: flex;
@@ -311,7 +215,6 @@ marquee {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    letter-spacing: 0%;
     text-align: left;
     color: rgb(17, 17, 17);
     margin-bottom: 1.5rem;
@@ -321,7 +224,6 @@ marquee {
     background: rgb(17, 17, 17);
 }
 
-/* ======================== Standard Ciriculumn ====================  */
 .std-container {
     display: flex;
     justify-content: space-between;
@@ -329,7 +231,7 @@ marquee {
 }
 
 .std-container .std-card {
-    flex: 1;
+    flex: 1 1 0%;
     display: flex;
     flex-direction: column;
     gap: 30px 0px;
@@ -337,8 +239,8 @@ marquee {
     box-sizing: border-box;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 28.3px 0.94px inset;
+    background: linear-gradient(rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     padding: 75px 40px;
 }
 
@@ -351,8 +253,8 @@ marquee {
     box-sizing: border-box;
     border: 0.94px solid rgb(242, 232, 255);
     border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 28.3px 0.94px inset;
+    background: linear-gradient(rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .std-container .std-card:last-child a {
@@ -363,8 +265,8 @@ marquee {
     box-sizing: border-box;
     border: 0.94px solid rgb(255, 244, 220);
     border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 28.3px 0.94px inset;
+    background: linear-gradient(rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .std-container .std-card:nth-child(2) a {
@@ -390,7 +292,6 @@ marquee {
     font-size: 15.09px;
     font-weight: 500;
     line-height: 28.3px;
-    letter-spacing: 0%;
     text-align: center;
 }
 
@@ -400,7 +301,6 @@ marquee {
     font-size: 15.09px;
     font-weight: 700;
     line-height: 28.3px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: capitalize;
 }
@@ -410,6 +310,9 @@ ol.std-slide {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+ol.std-slide li:hover {
+    background: #000000;
 }
 
 ol.std-slide li {
@@ -425,45 +328,51 @@ ol.std-slide li img {
 
 section.std-section {
     padding-bottom: 3.75rem;
+    background: url(../assets/bg.png), linear-gradient(rgb(247 247 247 / 80%), transparent);
+    url(,linear-gradient(rgb(247, 247, 247), transparent));background-size: cover;
 }
-/* ======================== Our Story ==============================  */
+
 section.story-section {
-    padding: 60px 0;
+    padding: 60px 0px;
+    background: url(../assets/bg.png), linear-gradient(rgb(247 247 247 / 80%), transparent);
+    background: url(../assets/bg.png), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-size: cover;
 }
+
 .story-container {
     display: flex;
     gap: 20px;
 }
 
 .story-container > .story-card {
-    flex: 1;
+    flex: 1 1 0%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.story-card-single ,.story-card {
+.story-card-single, .story-card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 35px;
 }
 
-.story-card-single>*, .story-card>* {
+.story-card-single > *, .story-card > * {
     padding: 0px 34px;
 }
 
-.story-card-single>img, .story-card> img {
-    padding: 0;
+.story-card-single > img, .story-card > img {
+    padding: 0px;
     margin-bottom: 25px;
 }
 
 .story-card-single p, .story-card p {
-    padding-bottom: 25px !important; 
+    padding-bottom: 25px !important;
 }
 
 .card-grid-content {
-    display:  grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
@@ -477,7 +386,7 @@ span.date {
     line-height: 28.76px;
     text-align: left;
     text-transform: capitalize;
-    background: #03A9F4;
+    background: rgb(3, 169, 244);
     padding: 12px 24px;
     border-radius: 25px;
     top: -45px;
@@ -490,7 +399,6 @@ span.date {
     font-size: 15.34px;
     font-weight: 500;
     line-height: 28.76px;
-    letter-spacing: 0%;
     text-align: left;
     margin-top: 50px;
 }
@@ -501,7 +409,6 @@ span.date {
     font-size: 24px;
     font-weight: 700;
     line-height: 38.35px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -511,21 +418,21 @@ span.date {
     font-size: 15.34px;
     font-weight: 700;
     line-height: 28.76px;
-    letter-spacing: 0%;
     text-align: left;
 }
+
 .view_all {
     text-align: center;
     margin-top: 80px;
 }
-/* ======================== Footer =================================  */
+
 .footer-container {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-container>div {
-    flex: 1;
+.footer-container > div {
+    flex: 1 1 0%;
 }
 
 .footer-about .logo img {
@@ -548,7 +455,6 @@ span.date {
     font-size: 42.14px;
     font-weight: 700;
     line-height: 39.51px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -564,7 +470,6 @@ footer.footer-section {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -574,7 +479,6 @@ footer.footer-section {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0%;
     text-align: left;
     margin-bottom: 48px;
 }
@@ -585,11 +489,16 @@ li {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    letter-spacing: 0%;
     text-align: left;
     margin-bottom: 18px;
 }
 
-.footer-menu {position: relative;left: 120px;}
+.footer-menu {
+    position: relative;
+    left: 120px;
+}
 
-.footer-social ul {display: flex;gap: 12px;}
+.footer-social ul {
+    display: flex;
+    gap: 12px;
+}
