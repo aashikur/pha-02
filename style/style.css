@@ -56,9 +56,12 @@ table {
     --black:rgb(17, 17, 17);
 }
 
+html{
+    font-size: 16px; 
+}
+
 body{
-    width: 100vw;
-    width: 100dvw;
+    width: 100%;
     font-family: "Quicksand", serif;;
 }
 
@@ -90,7 +93,7 @@ a {
 
 img{
     width: 100%;
-    max-width: 200px;
+    max-width: 50vw;
 }
 .section-center {
     max-width: 1190px;
@@ -107,6 +110,13 @@ img{
     border-radius: 12px;
     display: inline-block;
 }
+
+main {
+    background: rgb(247,247,247);
+    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+
+
 /* ======================== Nav ====================================  */
 nav{
     padding: 20px 0;
@@ -150,6 +160,49 @@ nav{
     cursor: pointer;
 }
 /* ======================== Banner =================================  */
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 50px;
+    padding: 3.75rem 0;
+}
+
+/* .banner-container>div {
+    flex: 1;
+} */
+
+.banner-hero {
+    display: flex;
+    justify-content: end;
+}
+
+.banner-hero img {
+    max-width: 468px;
+    width: 29.25rem;
+}
+
+.banner-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(17, 17, 17);
+    margin-bottom: 1.5rem;
+}
+
+.banner-text .btn {
+    background: rgb(17,17,17);
+}
 /* ======================== Standard Ciriculumn ====================  */
 /* ======================== Our Story ==============================  */
 /* ======================== Footer =================================  */
