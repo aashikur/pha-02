@@ -97,10 +97,18 @@ img {
     display: inline-block;
 }
 
-.btn:hover,a:hover{
+/* .btn:hover,a:hover{
     opacity: 0.8;
+} */
+a.nav-cta.btn {
+    border: 1px solid var(--orange);
+    transition: all 0.2s ease;
 }
 
+a.nav-cta.btn:hover {
+    background: transparent;
+    color: var(--orange);
+}
 h1.section-title {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
@@ -218,8 +226,14 @@ section.banner-section {
 
 .banner-text .btn {
     background: rgb(17, 17, 17);
+    border: 1px solid rgb(17, 17, 17);
+    transition: all 0.3s ease;
 }
-
+.banner-text .btn:hover {
+    color: rgb(0 0 0);
+    background: transparent;
+    font-weight: bold;
+}
 /* marquee  */
 section.marquee {
     background: #fe810133;
