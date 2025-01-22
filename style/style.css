@@ -166,7 +166,6 @@ nav {
 
 .nav-container .logo, .nav-container .menu ol li:hover a{
     color: var(--one);
-    opacity: .6;
 }
 
 .nav-container .toggle-menu {
@@ -180,13 +179,6 @@ section.banner-section {
     background: rgb(247, 247, 247);
 }
 
-marquee {
-    width: 486px;
-    max-width: 486px;
-    top: -12px;
-    position: relative;
-    font-size: 1rem;
-}
 
 .banner-container {
     display: flex;
@@ -221,11 +213,36 @@ marquee {
     text-align: left;
     color: rgb(17, 17, 17);
     margin-bottom: 1.5rem;
+    max-width: 630px;
 }
 
 .banner-text .btn {
     background: rgb(17, 17, 17);
 }
+
+/* marquee  */
+section.marquee {
+    background: #fe810133;
+    padding: 8px 0;
+}
+
+.marquee-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+}
+
+.marquee-container .marque-right {
+    flex: 1;
+}
+
+.marque-left p {
+    font-weight: bold;
+    color: var(--two);
+}
+
+
+
 
 .std-container {
     display: flex;
@@ -334,6 +351,7 @@ section.std-section {
     padding-bottom: 3.75rem;
     background: url(../assets/bg.png), linear-gradient(rgb(247 247 247 / 80%), transparent);
     background-size: cover;
+    padding-top: 4rem;
 }
 
 section.story-section {
@@ -464,18 +482,19 @@ span.date {
     display: inline;
 }
 
-.footer-about .logo {
+.footer-about .logo-f {
     display: flex;
     margin-bottom: 60px;
 }
 
-.footer-about .logo h1 {
-    color: rgb(255, 255, 255);
-    font-family: Quicksand;
-    font-size: 42.14px;
+.logo-f img {
+    width: 96px;
+}
+
+.logo-f h1 {
+    margin-left: 10px;
     font-weight: 700;
-    line-height: 39.51px;
-    text-align: left;
+    color: white;
 }
 
 footer.footer-section {
@@ -491,6 +510,7 @@ footer.footer-section {
     font-weight: 400;
     line-height: 25px;
     text-align: left;
+    max-width: 400px;
 }
 
 .footer-menu h2, .footer-social h2 {

@@ -58,7 +58,9 @@
         flex-direction: column;
         gap: 50px;
     }
-    
+    .footer-menu ul, .footer-menu  h2 {
+        padding-left: 0px;
+    }
     .footer-container .footer-menu {
         left: 0;
     }
@@ -115,9 +117,6 @@
         width: 300px;
     }
     
-    p.marquee {
-        display: none;
-    }
 
     .banner-container>div {flex: 1;}
 
@@ -172,17 +171,29 @@
 
 
     .banner-text h1 {
-        line-height: 2.6rem;
+        line-height: 2.12rem;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
     
     .banner-text p {
-        width: 300px;
+        width: 336px;
+        text-align: center;
+        line-height: 1.25rem;
     }
     
-    p.marquee {
-            display: none;
+    .std-container .std-card p {
+        max-width: 375px;
     }
 
+
+
+    h1.section-title {
+        line-height: 3.2rem;
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+        padding-top: 2rem;
+    }
 
 span.date {
     position: relative;
@@ -198,11 +209,6 @@ span.date {
     border-radius: 25px;
     top: -34px;
     left: 19px;
-}
-.card-grid-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
 
 span.date {
@@ -230,6 +236,12 @@ ol.std-slide{
                                  Less then 576px
 ============================================================================= */
 @media (max-width: 575.98px) { 
+
+.card-grid-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
 .logo h1{
     display: none;
