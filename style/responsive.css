@@ -135,6 +135,10 @@
 ============================================================================= */
 @media (max-width: 767.98px) {  
 
+    nav {
+        border: 2px solid var(--orange);
+    }
+    
     a.nav-cta.btn {
         display: none;
     }
@@ -211,7 +215,9 @@ span.date {
     text-align: center;
 }
 
-
+ol.std-slide{
+    display: none;
+}
 
 } /*------767px---------*/
 
