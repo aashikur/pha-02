@@ -313,6 +313,7 @@ section.marquee {
     font-weight: 500;
     line-height: 28.3px;
     text-align: center;
+    max-width: 500px;
 }
 
 .std-container .std-card a {

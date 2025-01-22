@@ -135,7 +135,8 @@
 @media (max-width: 767.98px) {  
 
     nav {
-        border: 2px solid var(--orange);
+        border: 1px solid rgb(254 163 1 / 67%);
+        padding: 10px 0;
     }
     
     a.nav-cta.btn {
@@ -238,16 +239,49 @@ ol.std-slide{
 @media (max-width: 575.98px) { 
 
 .card-grid-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    gap: 10px;
 }
 
+.story-card {
+    padding-bottom: 15px;
+}
+
+.story-card img {
+    margin-bottom: 0;
+}
+span.date {
+    font-size: 0.8rem;
+    top: -39px;
+    margin: 0;
+    padding: 6px 17px;
+}
 .logo h1{
     display: none;
 }
 
+h1.section-title {
+    font-size: 2rem;
+    padding-top: 0;
+    margin-bottom: 1.75rem;
+}
+.section-center {
+    padding: 0 20px;
+}
+section.story-section {padding-top: 20px;}
+span.date {
+    font-size: 0.8rem;
+    top: -18px;
+    margin: 0;
+    padding: 6px 17px;
+}
 
+.story-card h2 {padding: 0 7px;line-height: 1.25rem;font-weight: 500;font-size: .9rem;}
+
+footer.footer-section {
+    padding: 70px 0;
+}
 
 
 
